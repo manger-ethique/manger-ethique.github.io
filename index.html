@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Manger éthique</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Liste des abattoirs qui pratiquent systématiquement l’étourdissement (insensibilisation) des animaux avant la saignée.">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+    <script defer src="app.min.js"></script>
+    <link rel="stylesheet" href="app.min.css">
+    <script>
+        WebFontConfig = {
+            google: { families: ['Nunito:400,700&display=swap']}
+        };
+
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+<h1>Manger éthique</h1>
+<div class="main">
+
+
+    <div>
+        <div>
+            <div class="search">
+                <label for="country">Pays</label>
+                <select name="country" id="country" disabled>
+                    <option value="FR">FR</option>
+                </select>
+
+                <label for="code">Code</label>
+                <input id="code" name="code" type="text" placeholder="code abattoir" maxlength="10"/>
+            </div>
+            <p class="notice">Le label "Bio" indique également un abattage avec étourdissement.</p>
+        </div>
+
+    </div>
+
+
+    <div>
+        <ul id="result"></ul>
+    </div>
+</div>
+
+<div class="info">
+    <h2>Légende</h2>
+    <ul class="type">
+        <li><span>B</span><a href="https://fr.wikipedia.org/wiki/Bos_taurus" target="_blank" rel="noreferrer noopener">Bovins</a></li>
+        <li><span>V</span>Veaux</li>
+        <li><span>O</span><a href="https://fr.wikipedia.org/wiki/Ovis" target="_blank" rel="noreferrer noopener">Ovins</a></li>
+        <li><span>C</span><a href="https://fr.wikipedia.org/wiki/Caprinae" target="_blank" rel="noreferrer noopener">Caprins</a></li>
+    </ul>
+    <h2>Informations</h2>
+    <p>L’étourdissement préalable des animaux est obligatoire.</p>
+    <p>Il assure l’insensibilisation durant leur abattage. Cependant il existe une dérogation concernant l’abattage
+        rituel (viandes halal et kasher) où les animaux peuvent être abattus sans étourdissement.</p>
+    <p>Une liste établie en février 2021 par <a href="https://oaba.fr/" target="_blank" rel="noreferrer noopener">l'association OABA</a>
+        recense les abattoirs qui n’ont pas sollicité ou pas obtenu l'autorisation. Cette liste ne concerne que les
+        établissements agréés pour l’abattage des ruminants : bovins, veaux, ovins et caprins.</p>
+    <a href="https://oaba.fr/PDF/Liste_Abattoir_etourdissement.pdf" class="cta" target="_blank" rel="noreferrer noopener">En savoir plus</a>
+    <div class="trigger close">X</div>
+</div>
+<div class="trigger">i</div>
+</body>
+</html>
