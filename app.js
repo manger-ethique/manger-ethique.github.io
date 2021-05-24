@@ -61,7 +61,7 @@ const search = {
                     <span class="${(!element.bovins) ? 'disabled' : ''}">B</span>
                     <span class="${(!element.veaux) ? 'disabled' : ''}" >V</span>
                     <span class="${(!element.ovins) ? 'disabled' : ''}">0</span>
-                    <span class="${(!element.caprin) ? 'disabled' : ''}">C</span>
+                    <span class="${(!element.caprins) ? 'disabled' : ''}">C</span>
                 </span>
                 </li>`
             });
