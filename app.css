@@ -126,7 +126,7 @@ h1 {
     color: var(--black-color);
     padding: 60px;
     text-align: left;
-    max-width: 400px;
+    max-width: 430px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -336,7 +336,7 @@ select:hover {
     font-weight: bold;
     border-radius: var(--gutter);
     display: inline-block;
-    margin: var(--gutter-s) auto var(--gutter);
+    margin: var(--gutter-s) auto 0;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
